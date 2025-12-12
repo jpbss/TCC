@@ -1,0 +1,18 @@
+# Arquivos de Cache do Python
+__pycache__/
+*.pyc
+
+# Ambiente Virtual
+.venv/
+venv/
+
+# Arquivos gerados pelo modelo
+resultados_teste/
+resultados_batch/
+diagramas/
+
+# Arquivos de frases geradas (grande e pode ser recriado)
+frases_geradas.txt
+
+# Dataset
+datasets

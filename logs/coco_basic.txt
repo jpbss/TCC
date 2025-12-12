@@ -1,0 +1,727 @@
+
+
+Usando o dispositivo: cuda
+Usando o discriminador: BasicDiscriminator (PatchGAN)
+Nenhum checkpoint encontrado. Iniciando treinamento do zero.
+Inicializando o DataLoader de Treino...
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 8 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+DataLoader de Treino pronto.
+Inicializando o DataLoader de Validação...
+DataLoader de Validação pronto.
+Carregando frases para o treinamento...
+50000 frases carregadas.
+Iniciando o treinamento (GAN com Disc: basic, Loss: CrossEntropy, ImgLoss: SSIM)...
+Diretório de Treino: datasets/coco/train
+Diretório de Validação: datasets/coco/val
+Total de Épocas: 100
+Epoch 1/100 [TREINO]: 100% 438/438 [04:01<00:00,  1.82batch/s, Adv_G=0.5032, Dados=0.0435, Disc=0.8589, Img=0.1309]
+Epoch 1/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.03batch/s]
+
+Epoch [1/100] Resumo da Validação:
+  [Loss Dados]: 0.030308   | [Loss Imagem (1-SSIM)]: 0.085406   | [Loss Adv. G]: 0.627606   | [Loss Disc]: 0.782087  
+  -> Loss GERAL (E/D) da Época: 0.157123
+  -> Nova melhor Loss GERAL (E/D)! (inf -> 0.157123). Salvando modelos...
+--------------------------------------------------------------------------------
+Epoch 2/100 [TREINO]: 100% 438/438 [04:04<00:00,  1.79batch/s, Adv_G=0.6849, Dados=0.0006, Disc=0.6779, Img=0.0735]
+Epoch 2/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.88batch/s]
+
+Epoch [2/100] Resumo da Validação:
+  [Loss Dados]: 0.002532   | [Loss Imagem (1-SSIM)]: 0.038624   | [Loss Adv. G]: 0.668278   | [Loss Disc]: 0.698155  
+  -> Loss GERAL (E/D) da Época: 0.098328
+  -> Nova melhor Loss GERAL (E/D)! (0.157123 -> 0.098328). Salvando modelos...
+--------------------------------------------------------------------------------
+Epoch 3/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=0.9682, Dados=0.0077, Disc=0.5268, Img=0.0860]
+Epoch 3/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.07batch/s]
+
+Epoch [3/100] Resumo da Validação:
+  [Loss Dados]: 0.013663   | [Loss Imagem (1-SSIM)]: 0.065023   | [Loss Adv. G]: 0.748658   | [Loss Disc]: 0.691507  
+  -> Loss GERAL (E/D) da Época: 0.137296
+--------------------------------------------------------------------------------
+Epoch 4/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.78batch/s, Adv_G=1.5339, Dados=0.0085, Disc=0.7666, Img=0.0540]
+Epoch 4/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.95batch/s]
+
+Epoch [4/100] Resumo da Validação:
+  [Loss Dados]: 0.045178   | [Loss Imagem (1-SSIM)]: 0.067122   | [Loss Adv. G]: 1.142596   | [Loss Disc]: 0.802456  
+  -> Loss GERAL (E/D) da Época: 0.209779
+--------------------------------------------------------------------------------
+Epoch 5/100 [TREINO]: 100% 438/438 [04:04<00:00,  1.79batch/s, Adv_G=1.0393, Dados=0.0117, Disc=0.7611, Img=0.0595]
+Epoch 5/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.97batch/s]
+
+Epoch [5/100] Resumo da Validação:
+  [Loss Dados]: 0.009643   | [Loss Imagem (1-SSIM)]: 0.045641   | [Loss Adv. G]: 0.853401   | [Loss Disc]: 0.709268  
+  -> Loss GERAL (E/D) da Época: 0.129214
+--------------------------------------------------------------------------------
+Epoch 6/100 [TREINO]: 100% 438/438 [04:04<00:00,  1.79batch/s, Adv_G=0.6052, Dados=0.0069, Disc=0.7522, Img=0.0780]
+Epoch 6/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.81batch/s]
+
+Epoch [6/100] Resumo da Validação:
+  [Loss Dados]: 0.030718   | [Loss Imagem (1-SSIM)]: 0.044428   | [Loss Adv. G]: 0.566237   | [Loss Disc]: 0.733843  
+  -> Loss GERAL (E/D) da Época: 0.120662
+--------------------------------------------------------------------------------
+Epoch 7/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.78batch/s, Adv_G=1.1002, Dados=0.0246, Disc=0.6306, Img=0.0845]
+Epoch 7/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.97batch/s]
+
+Epoch [7/100] Resumo da Validação:
+  [Loss Dados]: 0.027359   | [Loss Imagem (1-SSIM)]: 0.056598   | [Loss Adv. G]: 0.789189   | [Loss Disc]: 0.725094  
+  -> Loss GERAL (E/D) da Época: 0.148726
+--------------------------------------------------------------------------------
+Epoch 8/100 [TREINO]: 100% 438/438 [04:04<00:00,  1.79batch/s, Adv_G=1.2590, Dados=0.0033, Disc=0.3747, Img=0.0635]
+Epoch 8/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.91batch/s]
+
+Epoch [8/100] Resumo da Validação:
+  [Loss Dados]: 0.004815   | [Loss Imagem (1-SSIM)]: 0.037991   | [Loss Adv. G]: 0.747301   | [Loss Disc]: 0.725627  
+  -> Loss GERAL (E/D) da Época: 0.108039
+--------------------------------------------------------------------------------
+Epoch 9/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.78batch/s, Adv_G=0.8480, Dados=0.0100, Disc=0.6809, Img=0.0435]
+Epoch 9/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.07batch/s]
+
+Epoch [9/100] Resumo da Validação:
+  [Loss Dados]: 0.040738   | [Loss Imagem (1-SSIM)]: 0.043823   | [Loss Adv. G]: 0.834397   | [Loss Disc]: 0.734083  
+  -> Loss GERAL (E/D) da Época: 0.157045
+--------------------------------------------------------------------------------
+Epoch 10/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=1.0667, Dados=0.0071, Disc=0.3583, Img=0.0732]
+Epoch 10/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.05batch/s]
+
+Epoch [10/100] Resumo da Validação:
+  [Loss Dados]: 0.008668   | [Loss Imagem (1-SSIM)]: 0.054668   | [Loss Adv. G]: 0.683406   | [Loss Disc]: 0.754525  
+  -> Loss GERAL (E/D) da Época: 0.118010
+--------------------------------------------------------------------------------
+Epoch 11/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=0.7458, Dados=0.0005, Disc=0.6161, Img=0.0656]
+Epoch 11/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.09batch/s]
+
+Epoch [11/100] Resumo da Validação:
+  [Loss Dados]: 0.008306   | [Loss Imagem (1-SSIM)]: 0.032478   | [Loss Adv. G]: 0.698929   | [Loss Disc]: 0.706759  
+  -> Loss GERAL (E/D) da Época: 0.102558
+--------------------------------------------------------------------------------
+Epoch 12/100 [TREINO]: 100% 438/438 [04:04<00:00,  1.79batch/s, Adv_G=1.0463, Dados=0.0049, Disc=0.6592, Img=0.0527]
+Epoch 12/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.05batch/s]
+
+Epoch [12/100] Resumo da Validação:
+  [Loss Dados]: 0.024846   | [Loss Imagem (1-SSIM)]: 0.041698   | [Loss Adv. G]: 0.718211   | [Loss Disc]: 0.714314  
+  -> Loss GERAL (E/D) da Época: 0.127940
+--------------------------------------------------------------------------------
+Epoch 13/100 [TREINO]: 100% 438/438 [04:04<00:00,  1.79batch/s, Adv_G=1.1424, Dados=0.0253, Disc=0.6931, Img=0.0574]
+Epoch 13/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.10batch/s]
+
+Epoch [13/100] Resumo da Validação:
+  [Loss Dados]: 0.023175   | [Loss Imagem (1-SSIM)]: 0.040057   | [Loss Adv. G]: 0.810279   | [Loss Disc]: 0.712857  
+  -> Loss GERAL (E/D) da Época: 0.134246
+--------------------------------------------------------------------------------
+Epoch 14/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.78batch/s, Adv_G=0.9972, Dados=0.0008, Disc=0.6149, Img=0.1152]
+Epoch 14/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.03batch/s]
+
+Epoch [14/100] Resumo da Validação:
+  [Loss Dados]: 0.021980   | [Loss Imagem (1-SSIM)]: 0.040346   | [Loss Adv. G]: 0.775820   | [Loss Disc]: 0.714328  
+  -> Loss GERAL (E/D) da Época: 0.129822
+--------------------------------------------------------------------------------
+Epoch 15/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=0.4239, Dados=0.0127, Disc=0.9011, Img=0.0488]
+Epoch 15/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.04batch/s]
+
+Epoch [15/100] Resumo da Validação:
+  [Loss Dados]: 0.012751   | [Loss Imagem (1-SSIM)]: 0.037430   | [Loss Adv. G]: 0.688510   | [Loss Disc]: 0.700584  
+  -> Loss GERAL (E/D) da Época: 0.109674
+--------------------------------------------------------------------------------
+Epoch 16/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=1.2563, Dados=0.0065, Disc=0.3966, Img=0.0944]
+Epoch 16/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.86batch/s]
+
+Epoch [16/100] Resumo da Validação:
+  [Loss Dados]: 0.006835   | [Loss Imagem (1-SSIM)]: 0.063051   | [Loss Adv. G]: 0.741086   | [Loss Disc]: 0.719431  
+  -> Loss GERAL (E/D) da Época: 0.128232
+--------------------------------------------------------------------------------
+Epoch 17/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=0.5777, Dados=0.0016, Disc=0.6283, Img=0.0539]
+Epoch 17/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.02batch/s]
+
+Epoch [17/100] Resumo da Validação:
+  [Loss Dados]: 0.004508   | [Loss Imagem (1-SSIM)]: 0.035255   | [Loss Adv. G]: 0.725324   | [Loss Disc]: 0.725332  
+  -> Loss GERAL (E/D) da Época: 0.103482
+--------------------------------------------------------------------------------
+Epoch 18/100 [TREINO]: 100% 438/438 [04:04<00:00,  1.79batch/s, Adv_G=1.2865, Dados=0.0062, Disc=0.3574, Img=0.0464]
+Epoch 18/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.05batch/s]
+
+Epoch [18/100] Resumo da Validação:
+  [Loss Dados]: 0.004227   | [Loss Imagem (1-SSIM)]: 0.040711   | [Loss Adv. G]: 0.608145   | [Loss Disc]: 0.768241  
+  -> Loss GERAL (E/D) da Época: 0.095575
+  -> Nova melhor Loss GERAL (E/D)! (0.098328 -> 0.095575). Salvando modelos...
+--------------------------------------------------------------------------------
+Epoch 19/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=0.7620, Dados=0.0730, Disc=0.7222, Img=0.0520]
+Epoch 19/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.90batch/s]
+
+Epoch [19/100] Resumo da Validação:
+  [Loss Dados]: 0.004632   | [Loss Imagem (1-SSIM)]: 0.042046   | [Loss Adv. G]: 0.684224   | [Loss Disc]: 0.715193  
+  -> Loss GERAL (E/D) da Época: 0.104588
+--------------------------------------------------------------------------------
+Epoch 20/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=0.4745, Dados=0.0057, Disc=0.8681, Img=0.0708]
+Epoch 20/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.04batch/s]
+
+Epoch [20/100] Resumo da Validação:
+  [Loss Dados]: 0.007073   | [Loss Imagem (1-SSIM)]: 0.037355   | [Loss Adv. G]: 0.699036   | [Loss Disc]: 0.702357  
+  -> Loss GERAL (E/D) da Época: 0.104993
+--------------------------------------------------------------------------------
+Epoch 21/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=0.9287, Dados=0.0013, Disc=0.5793, Img=0.0927]
+Epoch 21/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.05batch/s]
+
+Epoch [21/100] Resumo da Validação:
+  [Loss Dados]: 0.003942   | [Loss Imagem (1-SSIM)]: 0.029653   | [Loss Adv. G]: 0.819959   | [Loss Disc]: 0.710479  
+  -> Loss GERAL (E/D) da Época: 0.108178
+--------------------------------------------------------------------------------
+Epoch 22/100 [TREINO]: 100% 438/438 [04:04<00:00,  1.79batch/s, Adv_G=0.7569, Dados=0.0022, Disc=0.4807, Img=0.0701]
+Epoch 22/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.98batch/s]
+
+Epoch [22/100] Resumo da Validação:
+  [Loss Dados]: 0.009613   | [Loss Imagem (1-SSIM)]: 0.037217   | [Loss Adv. G]: 0.792485   | [Loss Disc]: 0.716021  
+  -> Loss GERAL (E/D) da Época: 0.116775
+--------------------------------------------------------------------------------
+Epoch 23/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=0.2768, Dados=0.0202, Disc=1.0544, Img=0.0424]
+Epoch 23/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.06batch/s]
+
+Epoch [23/100] Resumo da Validação:
+  [Loss Dados]: 0.005385   | [Loss Imagem (1-SSIM)]: 0.035007   | [Loss Adv. G]: 0.467751   | [Loss Disc]: 0.741139  
+  -> Loss GERAL (E/D) da Época: 0.078415
+  -> Nova melhor Loss GERAL (E/D)! (0.095575 -> 0.078415). Salvando modelos...
+--------------------------------------------------------------------------------
+Epoch 24/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=1.2289, Dados=0.0041, Disc=0.7690, Img=0.0619]
+Epoch 24/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.80batch/s]
+
+Epoch [24/100] Resumo da Validação:
+  [Loss Dados]: 0.010205   | [Loss Imagem (1-SSIM)]: 0.057993   | [Loss Adv. G]: 1.025078   | [Loss Disc]: 0.726323  
+  -> Loss GERAL (E/D) da Época: 0.156208
+--------------------------------------------------------------------------------
+Epoch 25/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.78batch/s, Adv_G=1.0297, Dados=0.0684, Disc=0.3890, Img=0.1004]
+Epoch 25/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.05batch/s]
+
+Epoch [25/100] Resumo da Validação:
+  [Loss Dados]: 0.010341   | [Loss Imagem (1-SSIM)]: 0.036725   | [Loss Adv. G]: 0.889931   | [Loss Disc]: 0.719438  
+  -> Loss GERAL (E/D) da Época: 0.126878
+--------------------------------------------------------------------------------
+Epoch 26/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.78batch/s, Adv_G=1.1737, Dados=0.0018, Disc=0.7190, Img=0.0378]
+Epoch 26/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.82batch/s]
+
+Epoch [26/100] Resumo da Validação:
+  [Loss Dados]: 0.014648   | [Loss Imagem (1-SSIM)]: 0.036677   | [Loss Adv. G]: 0.860619   | [Loss Disc]: 0.708471  
+  -> Loss GERAL (E/D) da Época: 0.128217
+--------------------------------------------------------------------------------
+Epoch 27/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=1.3599, Dados=0.0028, Disc=0.7226, Img=0.0546]
+Epoch 27/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.05batch/s]
+
+Epoch [27/100] Resumo da Validação:
+  [Loss Dados]: 0.010138   | [Loss Imagem (1-SSIM)]: 0.055600   | [Loss Adv. G]: 0.814373   | [Loss Disc]: 0.706096  
+  -> Loss GERAL (E/D) da Época: 0.133275
+--------------------------------------------------------------------------------
+Epoch 28/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=0.8892, Dados=0.0016, Disc=0.5261, Img=0.0396]
+Epoch 28/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.91batch/s]
+
+Epoch [28/100] Resumo da Validação:
+  [Loss Dados]: 0.003516   | [Loss Imagem (1-SSIM)]: 0.026983   | [Loss Adv. G]: 0.404271   | [Loss Disc]: 0.770218  
+  -> Loss GERAL (E/D) da Época: 0.064181
+  -> Nova melhor Loss GERAL (E/D)! (0.078415 -> 0.064181). Salvando modelos...
+--------------------------------------------------------------------------------
+Epoch 29/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=0.7457, Dados=0.0051, Disc=0.6965, Img=0.0316]
+Epoch 29/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.04batch/s]
+
+Epoch [29/100] Resumo da Validação:
+  [Loss Dados]: 0.004259   | [Loss Imagem (1-SSIM)]: 0.041817   | [Loss Adv. G]: 0.632401   | [Loss Disc]: 0.710105  
+  -> Loss GERAL (E/D) da Época: 0.098863
+--------------------------------------------------------------------------------
+Epoch 30/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=0.6519, Dados=0.0782, Disc=0.6837, Img=0.0827]
+Epoch 30/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.09batch/s]
+
+Epoch [30/100] Resumo da Validação:
+  [Loss Dados]: 0.010630   | [Loss Imagem (1-SSIM)]: 0.044791   | [Loss Adv. G]: 0.537844   | [Loss Disc]: 0.723239  
+  -> Loss GERAL (E/D) da Época: 0.098008
+--------------------------------------------------------------------------------
+Epoch 31/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=1.1541, Dados=0.0061, Disc=0.3899, Img=0.1223]
+Epoch 31/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.02batch/s]
+
+Epoch [31/100] Resumo da Validação:
+  [Loss Dados]: 0.005502   | [Loss Imagem (1-SSIM)]: 0.034226   | [Loss Adv. G]: 0.809218   | [Loss Disc]: 0.703697  
+  -> Loss GERAL (E/D) da Época: 0.112093
+--------------------------------------------------------------------------------
+Epoch 32/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.78batch/s, Adv_G=1.2089, Dados=0.0213, Disc=0.4201, Img=0.1154]
+Epoch 32/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.05batch/s]
+
+Epoch [32/100] Resumo da Validação:
+  [Loss Dados]: 0.011474   | [Loss Imagem (1-SSIM)]: 0.047164   | [Loss Adv. G]: 0.690639   | [Loss Disc]: 0.695863  
+  -> Loss GERAL (E/D) da Época: 0.115911
+--------------------------------------------------------------------------------
+Epoch 33/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=0.8657, Dados=0.0017, Disc=0.5296, Img=0.0607]
+Epoch 33/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.04batch/s]
+
+Epoch [33/100] Resumo da Validação:
+  [Loss Dados]: 0.003702   | [Loss Imagem (1-SSIM)]: 0.032437   | [Loss Adv. G]: 0.533430   | [Loss Disc]: 0.717503  
+  -> Loss GERAL (E/D) da Época: 0.081373
+--------------------------------------------------------------------------------
+Epoch 34/100 [TREINO]: 100% 438/438 [04:06<00:00,  1.78batch/s, Adv_G=1.4947, Dados=0.0100, Disc=0.5989, Img=0.1463]
+Epoch 34/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.06batch/s]
+
+Epoch [34/100] Resumo da Validação:
+  [Loss Dados]: 0.007883   | [Loss Imagem (1-SSIM)]: 0.039040   | [Loss Adv. G]: 0.810370   | [Loss Disc]: 0.697115  
+  -> Loss GERAL (E/D) da Época: 0.118200
+--------------------------------------------------------------------------------
+Epoch 35/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=0.4756, Dados=0.0038, Disc=0.7044, Img=0.0700]
+Epoch 35/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.83batch/s]
+
+Epoch [35/100] Resumo da Validação:
+  [Loss Dados]: 0.007979   | [Loss Imagem (1-SSIM)]: 0.051691   | [Loss Adv. G]: 0.503096   | [Loss Disc]: 0.744200  
+  -> Loss GERAL (E/D) da Época: 0.097057
+--------------------------------------------------------------------------------
+Epoch 36/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.78batch/s, Adv_G=0.8472, Dados=0.0166, Disc=0.9428, Img=0.0696]
+Epoch 36/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.04batch/s]
+
+Epoch [36/100] Resumo da Validação:
+  [Loss Dados]: 0.006266   | [Loss Imagem (1-SSIM)]: 0.049099   | [Loss Adv. G]: 0.779433   | [Loss Disc]: 0.694860  
+  -> Loss GERAL (E/D) da Época: 0.121033
+--------------------------------------------------------------------------------
+Epoch 37/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=1.1446, Dados=0.0005, Disc=0.6327, Img=0.0559]
+Epoch 37/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.07batch/s]
+
+Epoch [37/100] Resumo da Validação:
+  [Loss Dados]: 0.004005   | [Loss Imagem (1-SSIM)]: 0.031433   | [Loss Adv. G]: 0.819126   | [Loss Disc]: 0.705513  
+  -> Loss GERAL (E/D) da Época: 0.109492
+--------------------------------------------------------------------------------
+Epoch 38/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=0.8953, Dados=0.0042, Disc=0.5891, Img=0.0440]
+Epoch 38/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.05batch/s]
+
+Epoch [38/100] Resumo da Validação:
+  [Loss Dados]: 0.004125   | [Loss Imagem (1-SSIM)]: 0.035300   | [Loss Adv. G]: 0.741008   | [Loss Disc]: 0.692791  
+  -> Loss GERAL (E/D) da Época: 0.104700
+--------------------------------------------------------------------------------
+Epoch 39/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=1.6212, Dados=0.0551, Disc=0.4252, Img=0.1108]
+Epoch 39/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.00batch/s]
+
+Epoch [39/100] Resumo da Validação:
+  [Loss Dados]: 0.005842   | [Loss Imagem (1-SSIM)]: 0.030124   | [Loss Adv. G]: 0.973790   | [Loss Disc]: 0.713611  
+  -> Loss GERAL (E/D) da Época: 0.125814
+--------------------------------------------------------------------------------
+Epoch 40/100 [TREINO]: 100% 438/438 [04:04<00:00,  1.79batch/s, Adv_G=0.7470, Dados=0.0062, Disc=0.6155, Img=0.0708]
+Epoch 40/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.98batch/s]
+
+Epoch [40/100] Resumo da Validação:
+  [Loss Dados]: 0.006746   | [Loss Imagem (1-SSIM)]: 0.028730   | [Loss Adv. G]: 0.624658   | [Loss Disc]: 0.699385  
+  -> Loss GERAL (E/D) da Época: 0.090759
+--------------------------------------------------------------------------------
+Epoch 41/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.78batch/s, Adv_G=0.7485, Dados=0.0064, Disc=0.6722, Img=0.0418]
+Epoch 41/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.02batch/s]
+
+Epoch [41/100] Resumo da Validação:
+  [Loss Dados]: 0.003587   | [Loss Imagem (1-SSIM)]: 0.026442   | [Loss Adv. G]: 0.813125   | [Loss Disc]: 0.707844  
+  -> Loss GERAL (E/D) da Época: 0.104731
+--------------------------------------------------------------------------------
+Epoch 42/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.78batch/s, Adv_G=1.1594, Dados=0.0010, Disc=0.7212, Img=0.0577]
+Epoch 42/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.90batch/s]
+
+Epoch [42/100] Resumo da Validação:
+  [Loss Dados]: 0.002363   | [Loss Imagem (1-SSIM)]: 0.023591   | [Loss Adv. G]: 0.845129   | [Loss Disc]: 0.702258  
+  -> Loss GERAL (E/D) da Época: 0.104569
+--------------------------------------------------------------------------------
+Epoch 43/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=1.2139, Dados=0.0023, Disc=0.5210, Img=0.0542]
+Epoch 43/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.05batch/s]
+
+Epoch [43/100] Resumo da Validação:
+  [Loss Dados]: 0.009919   | [Loss Imagem (1-SSIM)]: 0.031023   | [Loss Adv. G]: 0.777226   | [Loss Disc]: 0.696160  
+  -> Loss GERAL (E/D) da Época: 0.110908
+--------------------------------------------------------------------------------
+Epoch 44/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=1.5722, Dados=0.0021, Disc=0.5632, Img=0.0666]
+Epoch 44/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.10batch/s]
+
+Epoch [44/100] Resumo da Validação:
+  [Loss Dados]: 0.004472   | [Loss Imagem (1-SSIM)]: 0.030094   | [Loss Adv. G]: 0.796478   | [Loss Disc]: 0.716100  
+  -> Loss GERAL (E/D) da Época: 0.106690
+--------------------------------------------------------------------------------
+Epoch 45/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=1.1459, Dados=0.0027, Disc=0.6238, Img=0.0434]
+Epoch 45/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.97batch/s]
+
+Epoch [45/100] Resumo da Validação:
+  [Loss Dados]: 0.006819   | [Loss Imagem (1-SSIM)]: 0.031810   | [Loss Adv. G]: 0.881456   | [Loss Disc]: 0.721436  
+  -> Loss GERAL (E/D) da Época: 0.118821
+--------------------------------------------------------------------------------
+Epoch 46/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.78batch/s, Adv_G=0.5653, Dados=0.0117, Disc=0.8110, Img=0.0696]
+Epoch 46/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.08batch/s]
+
+Epoch [46/100] Resumo da Validação:
+  [Loss Dados]: 0.011106   | [Loss Imagem (1-SSIM)]: 0.031320   | [Loss Adv. G]: 0.578646   | [Loss Disc]: 0.714493  
+  -> Loss GERAL (E/D) da Época: 0.092461
+--------------------------------------------------------------------------------
+Epoch 47/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=1.7474, Dados=0.0058, Disc=0.2095, Img=0.0338]
+Epoch 47/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.10batch/s]
+
+Epoch [47/100] Resumo da Validação:
+  [Loss Dados]: 0.012192   | [Loss Imagem (1-SSIM)]: 0.037909   | [Loss Adv. G]: 0.825110   | [Loss Disc]: 0.703660  
+  -> Loss GERAL (E/D) da Época: 0.123135
+--------------------------------------------------------------------------------
+Epoch 48/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=0.9133, Dados=0.0111, Disc=0.6930, Img=0.0345]
+Epoch 48/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.02batch/s]
+
+Epoch [48/100] Resumo da Validação:
+  [Loss Dados]: 0.003761   | [Loss Imagem (1-SSIM)]: 0.026812   | [Loss Adv. G]: 0.765956   | [Loss Disc]: 0.708906  
+  -> Loss GERAL (E/D) da Época: 0.100465
+--------------------------------------------------------------------------------
+Epoch 49/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.78batch/s, Adv_G=1.2146, Dados=0.0018, Disc=0.4840, Img=0.0413]
+Epoch 49/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.02batch/s]
+
+Epoch [49/100] Resumo da Validação:
+  [Loss Dados]: 0.007003   | [Loss Imagem (1-SSIM)]: 0.050377   | [Loss Adv. G]: 0.982722   | [Loss Disc]: 0.713196  
+  -> Loss GERAL (E/D) da Época: 0.143058
+--------------------------------------------------------------------------------
+Epoch 50/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=1.6446, Dados=0.0064, Disc=0.9809, Img=0.0432]
+Epoch 50/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.98batch/s]
+
+Epoch [50/100] Resumo da Validação:
+  [Loss Dados]: 0.015306   | [Loss Imagem (1-SSIM)]: 0.032469   | [Loss Adv. G]: 0.928318   | [Loss Disc]: 0.703934  
+  -> Loss GERAL (E/D) da Época: 0.132490
+--------------------------------------------------------------------------------
+Epoch 51/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=0.8959, Dados=0.0123, Disc=0.6978, Img=0.0778]
+Epoch 51/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.08batch/s]
+
+Epoch [51/100] Resumo da Validação:
+  [Loss Dados]: 0.010947   | [Loss Imagem (1-SSIM)]: 0.027052   | [Loss Adv. G]: 0.636368   | [Loss Disc]: 0.704796  
+  -> Loss GERAL (E/D) da Época: 0.094873
+--------------------------------------------------------------------------------
+Epoch 52/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=1.4020, Dados=0.0132, Disc=0.2528, Img=0.0936]
+Epoch 52/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.05batch/s]
+
+Epoch [52/100] Resumo da Validação:
+  [Loss Dados]: 0.017970   | [Loss Imagem (1-SSIM)]: 0.034336   | [Loss Adv. G]: 0.757464   | [Loss Disc]: 0.731073  
+  -> Loss GERAL (E/D) da Época: 0.119469
+--------------------------------------------------------------------------------
+Epoch 53/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=1.0292, Dados=0.0059, Disc=0.6410, Img=0.0507]
+Epoch 53/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.91batch/s]
+
+Epoch [53/100] Resumo da Validação:
+  [Loss Dados]: 0.006427   | [Loss Imagem (1-SSIM)]: 0.050129   | [Loss Adv. G]: 0.717356   | [Loss Disc]: 0.699895  
+  -> Loss GERAL (E/D) da Época: 0.115759
+--------------------------------------------------------------------------------
+Epoch 54/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=1.5661, Dados=0.0073, Disc=0.3456, Img=0.1065]
+Epoch 54/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.08batch/s]
+
+Epoch [54/100] Resumo da Validação:
+  [Loss Dados]: 0.010285   | [Loss Imagem (1-SSIM)]: 0.046783   | [Loss Adv. G]: 0.801200   | [Loss Disc]: 0.712257  
+  -> Loss GERAL (E/D) da Época: 0.125493
+--------------------------------------------------------------------------------
+Epoch 55/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=1.1113, Dados=0.0032, Disc=0.6972, Img=0.0604]
+Epoch 55/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.01batch/s]
+
+Epoch [55/100] Resumo da Validação:
+  [Loss Dados]: 0.006506   | [Loss Imagem (1-SSIM)]: 0.041985   | [Loss Adv. G]: 1.148492   | [Loss Disc]: 0.772529  
+  -> Loss GERAL (E/D) da Época: 0.152844
+--------------------------------------------------------------------------------
+Epoch 56/100 [TREINO]: 100% 438/438 [04:05<00:00,  1.79batch/s, Adv_G=2.0859, Dados=0.0026, Disc=0.1100, Img=0.0849]
+Epoch 56/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  6.02batch/s]
+
+Epoch [56/100] Resumo da Validação:
+  [Loss Dados]: 0.006700   | [Loss Imagem (1-SSIM)]: 0.042401   | [Loss Adv. G]: 0.195968   | [Loss Disc]: 1.012627  
+  -> Loss GERAL (E/D) da Época: 0.058098
+  -> Nova melhor Loss GERAL (E/D)! (0.064181 -> 0.058098). Salvando modelos...
+--------------------------------------------------------------------------------
+Epoch 57/100 [TREINO]: 100% 438/438 [07:30<00:00,  1.03s/batch, Adv_G=0.7234, Dados=0.0088, Disc=0.6538, Img=0.0739]
+Epoch 57/100 [VALIDAÇÃO]: 100% 94/94 [01:47<00:00,  1.14s/batch]
+
+Epoch [57/100] Resumo da Validação:
+  [Loss Dados]: 0.010275   | [Loss Imagem (1-SSIM)]: 0.041191   | [Loss Adv. G]: 0.776470   | [Loss Disc]: 0.701231  
+  -> Loss GERAL (E/D) da Época: 0.118816
+--------------------------------------------------------------------------------
+Epoch 58/100 [TREINO]: 100% 438/438 [04:33<00:00,  1.60batch/s, Adv_G=1.0909, Dados=0.0025, Disc=0.4265, Img=0.0434]
+Epoch 58/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.98batch/s]
+
+Epoch [58/100] Resumo da Validação:
+  [Loss Dados]: 0.014912   | [Loss Imagem (1-SSIM)]: 0.057176   | [Loss Adv. G]: 0.720879   | [Loss Disc]: 0.716658  
+  -> Loss GERAL (E/D) da Época: 0.129882
+--------------------------------------------------------------------------------
+Epoch 59/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.2523, Dados=0.0345, Disc=0.5201, Img=0.0553]
+Epoch 59/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.72batch/s]
+
+Epoch [59/100] Resumo da Validação:
+  [Loss Dados]: 0.007524   | [Loss Imagem (1-SSIM)]: 0.034285   | [Loss Adv. G]: 1.061820   | [Loss Disc]: 0.747737  
+  -> Loss GERAL (E/D) da Época: 0.139420
+--------------------------------------------------------------------------------
+Epoch 60/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.4056, Dados=0.0015, Disc=1.1264, Img=0.0332]
+Epoch 60/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.90batch/s]
+
+Epoch [60/100] Resumo da Validação:
+  [Loss Dados]: 0.007456   | [Loss Imagem (1-SSIM)]: 0.037226   | [Loss Adv. G]: 0.587431   | [Loss Disc]: 0.727576  
+  -> Loss GERAL (E/D) da Época: 0.094118
+--------------------------------------------------------------------------------
+Epoch 61/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.5835, Dados=0.0054, Disc=0.5587, Img=0.0659]
+Epoch 61/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.85batch/s]
+
+Epoch [61/100] Resumo da Validação:
+  [Loss Dados]: 0.013076   | [Loss Imagem (1-SSIM)]: 0.037894   | [Loss Adv. G]: 0.899500   | [Loss Disc]: 0.719050  
+  -> Loss GERAL (E/D) da Época: 0.131447
+--------------------------------------------------------------------------------
+Epoch 62/100 [TREINO]: 100% 438/438 [04:15<00:00,  1.72batch/s, Adv_G=1.2386, Dados=0.0098, Disc=0.6216, Img=0.0484]
+Epoch 62/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.79batch/s]
+
+Epoch [62/100] Resumo da Validação:
+  [Loss Dados]: 0.008040   | [Loss Imagem (1-SSIM)]: 0.036749   | [Loss Adv. G]: 0.898882   | [Loss Disc]: 0.725407  
+  -> Loss GERAL (E/D) da Época: 0.125490
+--------------------------------------------------------------------------------
+Epoch 63/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.3110, Dados=0.0177, Disc=1.2029, Img=0.0759]
+Epoch 63/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.86batch/s]
+
+Epoch [63/100] Resumo da Validação:
+  [Loss Dados]: 0.011989   | [Loss Imagem (1-SSIM)]: 0.051623   | [Loss Adv. G]: 0.451762   | [Loss Disc]: 0.760855  
+  -> Loss GERAL (E/D) da Época: 0.095883
+--------------------------------------------------------------------------------
+Epoch 64/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.9257, Dados=0.0203, Disc=0.7866, Img=0.0496]
+Epoch 64/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.80batch/s]
+
+Epoch [64/100] Resumo da Validação:
+  [Loss Dados]: 0.012251   | [Loss Imagem (1-SSIM)]: 0.040433   | [Loss Adv. G]: 0.782195   | [Loss Disc]: 0.724776  
+  -> Loss GERAL (E/D) da Época: 0.120795
+--------------------------------------------------------------------------------
+Epoch 65/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.9181, Dados=0.0014, Disc=0.9742, Img=0.0819]
+Epoch 65/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.91batch/s]
+
+Epoch [65/100] Resumo da Validação:
+  [Loss Dados]: 0.021750   | [Loss Imagem (1-SSIM)]: 0.036291   | [Loss Adv. G]: 1.197711   | [Loss Disc]: 0.802045  
+  -> Loss GERAL (E/D) da Época: 0.168739
+--------------------------------------------------------------------------------
+Epoch 66/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.4406, Dados=0.0151, Disc=0.4038, Img=0.0584]
+Epoch 66/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.91batch/s]
+
+Epoch [66/100] Resumo da Validação:
+  [Loss Dados]: 0.012213   | [Loss Imagem (1-SSIM)]: 0.025253   | [Loss Adv. G]: 0.966213   | [Loss Disc]: 0.727486  
+  -> Loss GERAL (E/D) da Época: 0.127774
+--------------------------------------------------------------------------------
+Epoch 67/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.8575, Dados=0.0035, Disc=0.9546, Img=0.0663]
+Epoch 67/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.68batch/s]
+
+Epoch [67/100] Resumo da Validação:
+  [Loss Dados]: 0.006948   | [Loss Imagem (1-SSIM)]: 0.038068   | [Loss Adv. G]: 0.876149   | [Loss Disc]: 0.725093  
+  -> Loss GERAL (E/D) da Época: 0.123114
+--------------------------------------------------------------------------------
+Epoch 68/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.4616, Dados=0.0008, Disc=0.5486, Img=0.0420]
+Epoch 68/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.91batch/s]
+
+Epoch [68/100] Resumo da Validação:
+  [Loss Dados]: 0.005836   | [Loss Imagem (1-SSIM)]: 0.040984   | [Loss Adv. G]: 0.788359   | [Loss Disc]: 0.723084  
+  -> Loss GERAL (E/D) da Época: 0.115410
+--------------------------------------------------------------------------------
+Epoch 69/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=2.7190, Dados=0.0051, Disc=0.9841, Img=0.0419]
+Epoch 69/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.88batch/s]
+
+Epoch [69/100] Resumo da Validação:
+  [Loss Dados]: 0.011189   | [Loss Imagem (1-SSIM)]: 0.033009   | [Loss Adv. G]: 1.142786   | [Loss Disc]: 0.767350  
+  -> Loss GERAL (E/D) da Época: 0.150224
+--------------------------------------------------------------------------------
+Epoch 70/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.9801, Dados=0.0054, Disc=0.6262, Img=0.1019]
+Epoch 70/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.91batch/s]
+
+Epoch [70/100] Resumo da Validação:
+  [Loss Dados]: 0.051275   | [Loss Imagem (1-SSIM)]: 0.047913   | [Loss Adv. G]: 0.866741   | [Loss Disc]: 0.713659  
+  -> Loss GERAL (E/D) da Época: 0.173884
+--------------------------------------------------------------------------------
+Epoch 71/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.4178, Dados=0.0358, Disc=0.7539, Img=0.0465]
+Epoch 71/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.91batch/s]
+
+Epoch [71/100] Resumo da Validação:
+  [Loss Dados]: 0.010022   | [Loss Imagem (1-SSIM)]: 0.039992   | [Loss Adv. G]: 0.399998   | [Loss Disc]: 0.776160  
+  -> Loss GERAL (E/D) da Época: 0.080015
+--------------------------------------------------------------------------------
+Epoch 72/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.7173, Dados=0.0064, Disc=0.5807, Img=0.0659]
+Epoch 72/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.82batch/s]
+
+Epoch [72/100] Resumo da Validação:
+  [Loss Dados]: 0.010914   | [Loss Imagem (1-SSIM)]: 0.035916   | [Loss Adv. G]: 0.599431   | [Loss Disc]: 0.717634  
+  -> Loss GERAL (E/D) da Época: 0.097793
+--------------------------------------------------------------------------------
+Epoch 73/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.7212, Dados=0.0025, Disc=0.4217, Img=0.0245]
+Epoch 73/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.89batch/s]
+
+Epoch [73/100] Resumo da Validação:
+  [Loss Dados]: 0.005856   | [Loss Imagem (1-SSIM)]: 0.036486   | [Loss Adv. G]: 0.909274   | [Loss Disc]: 0.757652  
+  -> Loss GERAL (E/D) da Época: 0.124148
+--------------------------------------------------------------------------------
+Epoch 74/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.4706, Dados=0.0094, Disc=0.9383, Img=0.0566]
+Epoch 74/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.89batch/s]
+
+Epoch [74/100] Resumo da Validação:
+  [Loss Dados]: 0.009788   | [Loss Imagem (1-SSIM)]: 0.039093   | [Loss Adv. G]: 0.598038   | [Loss Disc]: 0.724839  
+  -> Loss GERAL (E/D) da Época: 0.098912
+--------------------------------------------------------------------------------
+Epoch 75/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.8042, Dados=0.0175, Disc=0.2092, Img=0.1058]
+Epoch 75/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.73batch/s]
+
+Epoch [75/100] Resumo da Validação:
+  [Loss Dados]: 0.007181   | [Loss Imagem (1-SSIM)]: 0.032398   | [Loss Adv. G]: 0.792876   | [Loss Disc]: 0.703498  
+  -> Loss GERAL (E/D) da Época: 0.110767
+--------------------------------------------------------------------------------
+Epoch 76/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.7519, Dados=0.0131, Disc=0.6215, Img=0.1002]
+Epoch 76/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.93batch/s]
+
+Epoch [76/100] Resumo da Validação:
+  [Loss Dados]: 0.005760   | [Loss Imagem (1-SSIM)]: 0.043618   | [Loss Adv. G]: 0.724695   | [Loss Disc]: 0.709216  
+  -> Loss GERAL (E/D) da Época: 0.110943
+--------------------------------------------------------------------------------
+Epoch 77/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.9993, Dados=0.0013, Disc=1.0224, Img=0.0671]
+Epoch 77/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.95batch/s]
+
+Epoch [77/100] Resumo da Validação:
+  [Loss Dados]: 0.011058   | [Loss Imagem (1-SSIM)]: 0.045953   | [Loss Adv. G]: 1.269330   | [Loss Disc]: 0.808281  
+  -> Loss GERAL (E/D) da Época: 0.172456
+--------------------------------------------------------------------------------
+Epoch 78/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.6841, Dados=0.0276, Disc=0.3137, Img=0.1027]
+Epoch 78/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.80batch/s]
+
+Epoch [78/100] Resumo da Validação:
+  [Loss Dados]: 0.007837   | [Loss Imagem (1-SSIM)]: 0.033845   | [Loss Adv. G]: 0.878743   | [Loss Disc]: 0.721304  
+  -> Loss GERAL (E/D) da Época: 0.121094
+--------------------------------------------------------------------------------
+Epoch 79/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.7858, Dados=0.0001, Disc=0.6803, Img=0.0318]
+Epoch 79/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.91batch/s]
+
+Epoch [79/100] Resumo da Validação:
+  [Loss Dados]: 0.001020   | [Loss Imagem (1-SSIM)]: 0.027373   | [Loss Adv. G]: 0.612385   | [Loss Disc]: 0.706618  
+  -> Loss GERAL (E/D) da Época: 0.082788
+--------------------------------------------------------------------------------
+Epoch 80/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.9902, Dados=0.0098, Disc=0.5643, Img=0.0506]
+Epoch 80/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.77batch/s]
+
+Epoch [80/100] Resumo da Validação:
+  [Loss Dados]: 0.009834   | [Loss Imagem (1-SSIM)]: 0.052545   | [Loss Adv. G]: 0.524301   | [Loss Disc]: 0.752938  
+  -> Loss GERAL (E/D) da Época: 0.101673
+--------------------------------------------------------------------------------
+Epoch 81/100 [TREINO]: 100% 438/438 [04:15<00:00,  1.72batch/s, Adv_G=1.3302, Dados=0.0033, Disc=0.2295, Img=0.0685]
+Epoch 81/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.89batch/s]
+
+Epoch [81/100] Resumo da Validação:
+  [Loss Dados]: 0.007796   | [Loss Imagem (1-SSIM)]: 0.031360   | [Loss Adv. G]: 0.676877   | [Loss Disc]: 0.706650  
+  -> Loss GERAL (E/D) da Época: 0.099003
+--------------------------------------------------------------------------------
+Epoch 82/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.7078, Dados=0.0248, Disc=0.5231, Img=0.1185]
+Epoch 82/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.88batch/s]
+
+Epoch [82/100] Resumo da Validação:
+  [Loss Dados]: 0.005612   | [Loss Imagem (1-SSIM)]: 0.042475   | [Loss Adv. G]: 0.762207   | [Loss Disc]: 0.694419  
+  -> Loss GERAL (E/D) da Época: 0.113690
+--------------------------------------------------------------------------------
+Epoch 83/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=2.2426, Dados=0.0172, Disc=0.5895, Img=0.0606]
+Epoch 83/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.69batch/s]
+
+Epoch [83/100] Resumo da Validação:
+  [Loss Dados]: 0.008367   | [Loss Imagem (1-SSIM)]: 0.038326   | [Loss Adv. G]: 0.902781   | [Loss Disc]: 0.721812  
+  -> Loss GERAL (E/D) da Época: 0.127390
+--------------------------------------------------------------------------------
+Epoch 84/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.5926, Dados=0.0098, Disc=0.5871, Img=0.0790]
+Epoch 84/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.87batch/s]
+
+Epoch [84/100] Resumo da Validação:
+  [Loss Dados]: 0.004341   | [Loss Imagem (1-SSIM)]: 0.041601   | [Loss Adv. G]: 0.619624   | [Loss Disc]: 0.721574  
+  -> Loss GERAL (E/D) da Época: 0.097504
+--------------------------------------------------------------------------------
+Epoch 85/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.7904, Dados=0.0154, Disc=0.3924, Img=0.0860]
+Epoch 85/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.90batch/s]
+
+Epoch [85/100] Resumo da Validação:
+  [Loss Dados]: 0.006878   | [Loss Imagem (1-SSIM)]: 0.032093   | [Loss Adv. G]: 0.600673   | [Loss Disc]: 0.728453  
+  -> Loss GERAL (E/D) da Época: 0.091016
+--------------------------------------------------------------------------------
+Epoch 86/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.1223, Dados=0.0021, Disc=0.5292, Img=0.0689]
+Epoch 86/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.90batch/s]
+
+Epoch [86/100] Resumo da Validação:
+  [Loss Dados]: 0.002388   | [Loss Imagem (1-SSIM)]: 0.048382   | [Loss Adv. G]: 0.572880   | [Loss Disc]: 0.721507  
+  -> Loss GERAL (E/D) da Época: 0.095962
+--------------------------------------------------------------------------------
+Epoch 87/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=2.2754, Dados=0.0332, Disc=0.8325, Img=0.1062]
+Epoch 87/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.71batch/s]
+
+Epoch [87/100] Resumo da Validação:
+  [Loss Dados]: 0.005631   | [Loss Imagem (1-SSIM)]: 0.028610   | [Loss Adv. G]: 1.181144   | [Loss Disc]: 0.778193  
+  -> Loss GERAL (E/D) da Época: 0.145203
+--------------------------------------------------------------------------------
+Epoch 88/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.9948, Dados=0.0050, Disc=0.7015, Img=0.0787]
+Epoch 88/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.91batch/s]
+
+Epoch [88/100] Resumo da Validação:
+  [Loss Dados]: 0.008341   | [Loss Imagem (1-SSIM)]: 0.046042   | [Loss Adv. G]: 0.735156   | [Loss Disc]: 0.730294  
+  -> Loss GERAL (E/D) da Época: 0.116389
+--------------------------------------------------------------------------------
+Epoch 89/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.5365, Dados=0.0013, Disc=0.7298, Img=0.0697]
+Epoch 89/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.88batch/s]
+
+Epoch [89/100] Resumo da Validação:
+  [Loss Dados]: 0.003387   | [Loss Imagem (1-SSIM)]: 0.032593   | [Loss Adv. G]: 0.729568   | [Loss Disc]: 0.704834  
+  -> Loss GERAL (E/D) da Época: 0.100789
+--------------------------------------------------------------------------------
+Epoch 90/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.0831, Dados=0.0017, Disc=0.4201, Img=0.0586]
+Epoch 90/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.89batch/s]
+
+Epoch [90/100] Resumo da Validação:
+  [Loss Dados]: 0.010502   | [Loss Imagem (1-SSIM)]: 0.033948   | [Loss Adv. G]: 0.580408   | [Loss Disc]: 0.729554  
+  -> Loss GERAL (E/D) da Época: 0.094004
+--------------------------------------------------------------------------------
+Epoch 91/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.7621, Dados=0.0813, Disc=0.4061, Img=0.1204]
+Epoch 91/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.88batch/s]
+
+Epoch [91/100] Resumo da Validação:
+  [Loss Dados]: 0.005906   | [Loss Imagem (1-SSIM)]: 0.029818   | [Loss Adv. G]: 1.174537   | [Loss Disc]: 0.783817  
+  -> Loss GERAL (E/D) da Época: 0.145723
+--------------------------------------------------------------------------------
+Epoch 92/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.5033, Dados=0.0016, Disc=0.2795, Img=0.0435]
+Epoch 92/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.85batch/s]
+
+Epoch [92/100] Resumo da Validação:
+  [Loss Dados]: 0.005901   | [Loss Imagem (1-SSIM)]: 0.033580   | [Loss Adv. G]: 0.892195   | [Loss Disc]: 0.712860  
+  -> Loss GERAL (E/D) da Época: 0.120305
+--------------------------------------------------------------------------------
+Epoch 93/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.4178, Dados=0.0071, Disc=0.5482, Img=0.0448]
+Epoch 93/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.68batch/s]
+
+Epoch [93/100] Resumo da Validação:
+  [Loss Dados]: 0.004840   | [Loss Imagem (1-SSIM)]: 0.033627   | [Loss Adv. G]: 0.761718   | [Loss Disc]: 0.716002  
+  -> Loss GERAL (E/D) da Época: 0.106232
+--------------------------------------------------------------------------------
+Epoch 94/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.1456, Dados=0.0018, Disc=0.3597, Img=0.0815]
+Epoch 94/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.84batch/s]
+
+Epoch [94/100] Resumo da Validação:
+  [Loss Dados]: 0.007591   | [Loss Imagem (1-SSIM)]: 0.039135   | [Loss Adv. G]: 0.710738   | [Loss Disc]: 0.733376  
+  -> Loss GERAL (E/D) da Época: 0.108016
+--------------------------------------------------------------------------------
+Epoch 95/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.0395, Dados=0.0053, Disc=0.6406, Img=0.0324]
+Epoch 95/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.87batch/s]
+
+Epoch [95/100] Resumo da Validação:
+  [Loss Dados]: 0.006799   | [Loss Imagem (1-SSIM)]: 0.027502   | [Loss Adv. G]: 0.739212   | [Loss Disc]: 0.718803  
+  -> Loss GERAL (E/D) da Época: 0.101347
+--------------------------------------------------------------------------------
+Epoch 96/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.6655, Dados=0.0302, Disc=0.7007, Img=0.0329]
+Epoch 96/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.91batch/s]
+
+Epoch [96/100] Resumo da Validação:
+  [Loss Dados]: 0.011084   | [Loss Imagem (1-SSIM)]: 0.032612   | [Loss Adv. G]: 0.718071   | [Loss Disc]: 0.726841  
+  -> Loss GERAL (E/D) da Época: 0.107350
+--------------------------------------------------------------------------------
+Epoch 97/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=0.7085, Dados=0.0045, Disc=0.6398, Img=0.0566]
+Epoch 97/100 [VALIDAÇÃO]: 100% 94/94 [00:15<00:00,  5.88batch/s]
+
+Epoch [97/100] Resumo da Validação:
+  [Loss Dados]: 0.005828   | [Loss Imagem (1-SSIM)]: 0.026293   | [Loss Adv. G]: 0.698706   | [Loss Disc]: 0.715995  
+  -> Loss GERAL (E/D) da Época: 0.095418
+--------------------------------------------------------------------------------
+Epoch 98/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.3783, Dados=0.0137, Disc=0.3367, Img=0.0530]
+Epoch 98/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.78batch/s]
+
+Epoch [98/100] Resumo da Validação:
+  [Loss Dados]: 0.007964   | [Loss Imagem (1-SSIM)]: 0.046521   | [Loss Adv. G]: 0.771579   | [Loss Disc]: 0.702261  
+  -> Loss GERAL (E/D) da Época: 0.120013
+--------------------------------------------------------------------------------
+Epoch 99/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.8070, Dados=0.0015, Disc=0.4456, Img=0.0723]
+Epoch 99/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.67batch/s]
+
+Epoch [99/100] Resumo da Validação:
+  [Loss Dados]: 0.007858   | [Loss Imagem (1-SSIM)]: 0.041023   | [Loss Adv. G]: 0.933333   | [Loss Disc]: 0.723042  
+  -> Loss GERAL (E/D) da Época: 0.131959
+--------------------------------------------------------------------------------
+Epoch 100/100 [TREINO]: 100% 438/438 [04:14<00:00,  1.72batch/s, Adv_G=1.5162, Dados=0.0401, Disc=0.2717, Img=0.2433]
+Epoch 100/100 [VALIDAÇÃO]: 100% 94/94 [00:16<00:00,  5.87batch/s]
+
+Epoch [100/100] Resumo da Validação:
+  [Loss Dados]: 0.005538   | [Loss Imagem (1-SSIM)]: 0.028810   | [Loss Adv. G]: 0.802240   | [Loss Disc]: 0.710266  
+  -> Loss GERAL (E/D) da Época: 0.107369
+--------------------------------------------------------------------------------
+Treinamento concluído!
+Modelos finais (última época) salvos em: 'checkpoints/basic_coco_final/encoder_gan_basic_ce_ssim.pth', 'checkpoints/basic_coco_final/decoder_gan_basic_ce_ssim.pth' e 'checkpoints/basic_coco_final/discriminator_gan_basic_ce_ssim.pth'
+Melhores modelos (baseado em validação GERAL) salvos como '..._best_basic_ce_ssim.pth' em 'checkpoints/basic_coco_final'
+
