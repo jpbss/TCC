@@ -1,6 +1,6 @@
-# Esteganografia Baseada em GAN 🔐🖼️
+# STEGS2GAN - Um Modelo de Aprendizado Profundo para Esteganografia e Esteganálise em Imagens Digitais utilizando Redes Adversárias Generativas 🔐🖼️
 
-Sistema de esteganografia que utiliza Redes Adversariais Generativas (GANs) para ocultar mensagens de texto em imagens, mantendo alta qualidade visual e imperceptibilidade.
+Modelo que utiliza Redes Adversariais Generativas (GANs) para ocultar mensagens de texto em imagens, mantendo alta qualidade visual e imperceptibilidade.
 
 ## 📋 Índice
 
