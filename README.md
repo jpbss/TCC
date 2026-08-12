@@ -270,26 +270,14 @@ Contribuições são bem-vindas! Por favor:
 4. Push para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
 
-## 📄 Licença
+## 👤 Autoria
 
-Este projeto foi desenvolvido como Trabalho de Conclusão de Curso (TCC).
+Este trabalho foi desenvolvido por João Pedro Balbino Santos Souza (jpbs921@gmail.com) e orientado pelo professor Kleber Manrique Trevisani (kleber@ifsp.edu.br) como Trabalho de Conclusão do Curso de BCC (Bacharelado em Ciência da Computação) do IFSP (Instituto Federal de Educacação, Ciẽncia e Tecnologia de São Paulo) - Campus Presidente Epitácio. 
 
-## 📚 Referências
-
-1. Zhu et al. (2018) - "HiDDeN: Hiding Data With Deep Networks"
-2. Hayes & Danezis (2017) - "Generating Steganographic Images via Adversarial Training"
-3. Baluja (2017) - "Hiding Images in Plain Sight: Deep Steganography"
-4. Goodfellow et al. (2014) - "Generative Adversarial Networks"
-
-## 👤 Autor
-
-João Pedro - [jpbss](https://github.com/jpbss)
 
 ## 🙏 Agradecimentos
 
-- Comunidade PyTorch
-- Autores das bibliotecas utilizadas
-- Orientador(a) do TCC
+- O autor agradece a comunidade acadêmica do BCC / IFSP - Campus Presidente Epitácio (instagram: @bccifsppep | site: https://pep.ifsp.edu.br) por todo o suporte despendido durante o desenvolvimento deste trabalho.
 
 ---
 
