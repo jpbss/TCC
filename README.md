@@ -4,20 +4,24 @@ Modelo que utiliza Redes Adversariais Generativas (GANs) para ocultar mensagens 
 
 ## 📋 Índice
 
-- [Descrição](#descrição)
+- [Descrição](#descricao)
 - [Características](#características)
 - [Instalação](#instalação)
 - [Uso](#uso)
 - [Arquitetura](#arquitetura)
 - [Resultados](#resultados)
 - [Estrutura do Projeto](#estrutura-do-projeto)
-- [Licença](#licença)
+- [Configuração](#configuração)
+- [Exemplos de Uso](#exemplos-de-uso)
+- [Como cotribuir](#como-contribuir)
+- [Autoria](#autoria)
+- [Agradecimentos](#agradecimentos)
 
-## 📖 Descrição
+## 📖 Descrição<a name="descricao"></a>
 
-Este projeto implementa um sistema completo de esteganografia usando técnicas de Deep Learning. O sistema é capaz de:
+Este projeto implementa um modelo de aprendizado profundo para realizar esteganografia que é capaz de:
 
-- **Ocultar** mensagens de texto (até 100 caracteres) dentro de imagens
+- **Ocultar** mensagens de texto (até 100 caracteres - 800 bits) dentro de imagens com 360x360 pixels (~0.0069 bits/pixel)
 - **Manter** alta qualidade visual (PSNR > 30dB, SSIM > 0.95)
 - **Recuperar** as mensagens com alta precisão
 - **Resistir** a análise visual humana
@@ -27,7 +31,7 @@ O sistema utiliza uma arquitetura GAN composta por:
 - **Decoder**: Extrai a mensagem escondida
 - **Discriminator**: Garante que imagens esteganográficas sejam indistinguíveis de imagens normais
 
-## ✨ Características
+## ✨ Características<a name="caracteristicas"></a>
 
 - ✅ Arquitetura baseada em blocos residuais (ResNet-inspired)
 - ✅ Dois tipos de discriminadores: BasicDiscriminator (PatchGAN) e SRNet
@@ -49,8 +53,8 @@ O sistema utiliza uma arquitetura GAN composta por:
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/jpbss/TCC.git
-cd TCC
+git clone https://github.com/jpbss/STEGS2GAN.git
+cd STEGS2GAN
 ```
 
 2. Instale as dependências:
@@ -184,12 +188,6 @@ Output: Logits (N, 2, H', W')
 | PSNR    | > 30 dB     | Relação sinal-ruído de pico |
 | SSIM    | > 0.95      | Similaridade estrutural |
 
-### Capacidade
-
-- **Tamanho da mensagem**: Até 100 caracteres (800 bits)
-- **Tamanho da imagem**: 360×360 pixels
-- **Taxa de bits**: ~0.006 bits/pixel
-
 ### Acurácia de Recuperação
 
 - Taxa de recuperação correta: > 95% em condições ideais
@@ -198,10 +196,10 @@ Output: Logits (N, 2, H', W')
 
 ```
 TCC/
-├── config.py              # Configurações centralizadas
-├── encoder.py             # Arquitetura do Encoder
-├── decoder.py             # Arquitetura do Decoder
-├── discriminator.py       # Discriminador PatchGAN
+├── config.py             # Configurações centralizadas
+├── encoder.py            # Arquitetura do Encoder
+├── decoder.py            # Arquitetura do Decoder
+├── discriminator.py      # Discriminador PatchGAN
 ├── SRNet.py              # Discriminador SRNet
 ├── dataloader.py         # Carregamento de dados
 ├── utils.py              # Funções utilitárias
@@ -211,7 +209,7 @@ TCC/
 ├── curva_treinamento.py  # Visualização de curvas de treinamento
 ├── frases.py             # Gerador de frases
 ├── requirements.txt      # Dependências
-└── README.md            # Este arquivo
+└── README.md             # Este arquivo
 ```
 
 ## 🔧 Configuração
@@ -260,7 +258,7 @@ O treinamento é automaticamente retomado se houver um checkpoint:
 python train.py --train-dir ./dataset/train --val-dir ./dataset/val --epochs 100
 ```
 
-## 🤝 Contribuindo
+## 🤝 Como Contribuir
 
 Contribuições são bem-vindas! Por favor:
 
